@@ -19,4 +19,3 @@ simply.on('longClick', function(e) {
 simply.text({ title: 'Counter', subtitle: count });
 
 
-);
