@@ -26,7 +26,6 @@ simply.on('longClick', function(e) {
 });
 });
 
-simply.text({ title: 'Counter', subtitle: count1 });
-simply.text({ title: 'counter', subtitle: count2 });
+simply.text({ title: 'count1', subtitle: count2 });
 
 
