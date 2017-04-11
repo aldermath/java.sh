@@ -1,21 +1,23 @@
 console.log('Simply.js demo!');
 
 
-var count = parseInt(localStorage.getItem('count')) || 0;
+var count1 = parseInt(localStorage.getItem('count1')) || 0;
+var count2 = parseInt(localStorage.getItem('count1')) || 0;
 
 simply.on('singleClick', function(e) {
   if (e.button === 'up') {
-    simply.subtitle(++count);
+    simply.subtitle(++count1);
   } else if (e.button === 'down') {
-    simply.subtitle(--count);
+    simply.subtitle(--count1);
   }
 simply.on('longClick', function(e) {
   if (e.button === 'select') {
-    simply.subtitle(count = 0);
+    simply.subtitle(count1 = 0);
     }
-  localStorage.setItem('count', count);
+  localStorage.setItem('count1', count1);
 });
 });
 
-simply.text({ title: 'Counter', subtitle: count });
+simply.text({ title: 'Counter', subtitle: count1 });
+
 
