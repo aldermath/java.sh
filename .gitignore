@@ -12,7 +12,7 @@ simply.on('singleClick', function(e) {
 simply.on('longClick', function(e) {
   if (e.button === 'select') {
     simply.subtitle(count = 0);
-    }
+    )}
   localStorage.setItem('count', count);
 });
 
