@@ -14,7 +14,7 @@ simply.on('longClick', function(e) {
     simply.subtitle(count = 0);
     }
   localStorage.setItem('count', count);
-}));
+});
 
 simply.text({ title: 'Counter', subtitle: count });
 
