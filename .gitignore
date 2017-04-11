@@ -13,6 +13,7 @@ simply.on('singleClick', function(e) {
 simply.on('longClick', function(e) {
   if (e.button === 'select') {
     simply.subtitle(count1 = 0);
+    simply.subtitle(count2 = 0);
     } else if (e.button === 'select') {
     sipmly.subtitle(--count1);
     } else if (e.button === 'down') {
@@ -26,6 +27,6 @@ simply.on('longClick', function(e) {
 });
 
 simply.text({ title: 'Counter', subtitle: count1 });
-simply.text({ subtitle: count2 });
+simply.text({ title: 'counter', subtitle: count2 });
 
 
