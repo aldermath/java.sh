@@ -1,12 +1,22 @@
-*.class
+console.log('Simply.js demo!');
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+simply.on('singleClick', function(e) {
+  console.log(util2.format('single clicked $button!', e));
+  simply.subtitle('Pressed ' + e.button + '!');
+});
 
-# Package Files #
-*.jar
-*.war
-*.ear
+simply.on('longClick', function(e) {
+  console.log(util2.format('long clicked $button!', e));
+  simply.vibe();
+  simply.scrollable(e.button !== 'select');
+});
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+simply.on('accelTap', function(e) {
+  console.log(util2.format('tapped accel axis $axis $direction!', e));
+  simply.subtitle('Tapped ' + (e.direction > 0 ? '+' : '-') + e.axis + '!');
+});
+
+simply.setText({
+  title: 'Simply Demo!',
+  body: 'This is a demo. Press buttons or tap the watch!',
+}, true);
