@@ -9,8 +9,12 @@ simply.on('singleClick', function(e) {
   } else if (e.button === 'down') {
     simply.subtitle(--count);
   }
+simply.on('longClick', function(e) {
+  if e.button === 'select') {
+    simply.subtitle(count = 0);
+    }
   localStorage.setItem('count', count);
-});
+}));
 
 simply.text({ title: 'Counter', subtitle: count });
 
