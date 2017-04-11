@@ -14,10 +14,10 @@ simply.on('longClick', function(e) {
   if (e.button === 'select') {
     simply.subtitle(count1 = 0);
     simply.subtitle(count2 = 0);
-    } else if (e.button === 'select') {
-    sipmly.subtitle(--count1);
+    } else if (e.button === 'up') {
+    sipmly.subtitle(count1 = count1 -1);
     } else if (e.button === 'down') {
-    simply.subtitle(--count2);
+    simply.subtitle(count2 = count2 -1);
     }
     
     
@@ -26,6 +26,6 @@ simply.on('longClick', function(e) {
 });
 });
 
-simply.text({ title: 'count1', subtitle: count2 });
+simply.text({ title: count1, subtitle: count2 });
 
 
