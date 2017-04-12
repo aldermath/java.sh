@@ -27,8 +27,8 @@ simply.on = function(longClick) {
     
   //localStorage.setItem('count1', count1);
   //localStorage.setItem('count2', count2);
-});
-});
+};
+};
 
 
 
