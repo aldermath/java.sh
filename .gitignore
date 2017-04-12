@@ -8,16 +8,16 @@ simply.on('singleClick', function(e) {
   if (e.button === 'up') {
     simply.subtitle(++count1);
   } else if (e.button === 'down') {
-    simply.subtitle(count2 = count2 + 1);
+    simply.subtitle(++count2);
   }
 simply.on('longClick', function(e) {
   if (e.button === 'select') {
     simply.subtitle(count1 = 0);
     simply.subtitle(count2 = 0);
     } else if (e.button === 'up') {
-    simply.subtitle(count1 = count1 -1);
+    simply.subtitle(--count1);
     } else if (e.button === 'down') {
-    simply.subtitle(count2 = count2 -1);
+    simply.subtitle(--count2);
     }
     
     
@@ -27,7 +27,7 @@ simply.on('longClick', function(e) {
 });
 
 simply.body = function(text, clear) {
-  return simply.impl.textfield('count', count1, clear);
+  return simply.impl.textfield('body', count1, clear);
 };
 
 
