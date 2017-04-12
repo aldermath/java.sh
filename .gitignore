@@ -8,7 +8,7 @@ simply.body = function(text, clear) {
   return simply.impl.textfield('body', count1);
 };
 
-simply.on = function('singleClick', function(e)) {
+simply.on = function(singleClick, function(e)) {
   if (e.button === 'up') {
     simply.subtitle(++count1);
   } else if (e.button === 'down') {
