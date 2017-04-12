@@ -14,7 +14,7 @@ simply.on = function(singleClick) {
   } else if (e.button === 'down') {
     simply.subtitle(++count2);
   }
-simply.on = function('longClick', function(e) {
+simply.on = function(longClick) {
   if (e.button === 'select') {
     simply.subtitle(count1 = 0);
     simply.subtitle(count2 = 0);
