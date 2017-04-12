@@ -3,6 +3,8 @@ console.log('Simply.js demo!');
 
 var count1 = parseInt(localStorage.getItem('count1')) || 0;
 var count2 = parseInt(localStorage.getItem('count2')) || 0;
+var count1 = 0;
+var count2 = 0;
 
 simply.body = function(text, clear) {
   return simply.impl.textfield('body', count1);
@@ -25,14 +27,14 @@ simply.on('longClick', function(e) {
     }
     
     
-  //localStorage.setItem('count1', count1);
-  //localStorage.setItem('count2', count2);
+  *localStorage.setItem('count1', count1);
+  *localStorage.setItem('count2', count2);
 });
 });
 
 
 
-//simply.text({ title: 'count1', subtitle: count1 });
-//simply.text({ title: 'count2', subtitle: count2});
+*simply.text({ title: 'count1', subtitle: count1 });
+*simply.text({ title: 'count2', subtitle: count2});
 
 
