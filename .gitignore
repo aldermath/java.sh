@@ -5,7 +5,7 @@ var count1 = parseInt(localStorage.getItem('count1')) || 0;
 var count2 = parseInt(localStorage.getItem('count2')) || 0;
 
 simply.body = function(text, clear) {
-  return simply.impl.textfield('body', count1,);
+  return simply.impl.textfield('body', count1);
 };
 
 simply.on = funtion('singleClick', function(e) {
