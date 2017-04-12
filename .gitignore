@@ -4,6 +4,10 @@ console.log('Simply.js demo!');
 var count1 = parseInt(localStorage.getItem('count1')) || 0;
 var count2 = parseInt(localStorage.getItem('count2')) || 0;
 
+simply.body = function(text, clear) {
+  return simply.impl.textfield('body', count1, clear);
+};
+
 simply.on('singleClick', function(e) {
   if (e.button === 'up') {
     simply.subtitle(++count1);
@@ -26,9 +30,6 @@ simply.on('longClick', function(e) {
 });
 });
 
-simply.body = function(text, clear) {
-  return simply.impl.textfield('body', count1, clear);
-};
 
 
 //simply.text({ title: 'count1', subtitle: count1 });
