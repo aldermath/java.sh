@@ -5,16 +5,16 @@ var count1 = parseInt(localStorage.getItem('count1')) || 0;
 var count2 = parseInt(localStorage.getItem('count2')) || 0;
 
 simply.body = function(text, clear) {
-  return simply.impl.textfield('body', count1, clear);
+  return simply.impl.textfield('body', count1,);
 };
 
-simply.on('singleClick', function(e) {
+simply.on = funtion('singleClick', function(e) {
   if (e.button === 'up') {
     simply.subtitle(++count1);
   } else if (e.button === 'down') {
     simply.subtitle(++count2);
   }
-simply.on('longClick', function(e) {
+simply.on = funtion ('longClick', function(e) {
   if (e.button === 'select') {
     simply.subtitle(count1 = 0);
     simply.subtitle(count2 = 0);
