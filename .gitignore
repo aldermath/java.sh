@@ -8,19 +8,19 @@ simply.body = function(text, clear) {
   return simply.impl.textfield('body', count1);
 };
 
-simply.on = function(singleClick, handeler) {
-  if (type === 'up') {
+simply.on('singleClick', function(e) {
+  if (e.button === 'up') {
     simply.subtitle(++count1);
-  } else if (type === 'down') {
+  } else if (e.button === 'down') {
     simply.subtitle(++count2);
   }
-simply.on = function(longClick) {
-  if (type === 'select') {
+simply.on('longClick', function(e) {
+  if (e.button === 'select') {
     simply.subtitle(count1 = 0);
     simply.subtitle(count2 = 0);
-    } else if (type === 'up') {
+    } else if (e.button === 'up') {
     simply.subtitle(--count1);
-    } else if (type === 'down') {
+    } else if (e.button === 'down') {
     simply.subtitle(--count2);
     }
     
