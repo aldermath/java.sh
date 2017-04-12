@@ -26,7 +26,12 @@ simply.on('longClick', function(e) {
 });
 });
 
-simply.text({ title: 'count1', subtitle: count1 });
-simply.text({ title: 'count2', subtitle: count2});
+simply.body = function(text, clear) {
+  return simply.impl.textfield('count', count1, clear);
+};
+
+
+//simply.text({ title: 'count1', subtitle: count1 });
+//simply.text({ title: 'count2', subtitle: count2});
 
 
