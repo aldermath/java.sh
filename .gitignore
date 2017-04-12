@@ -9,18 +9,18 @@ simply.body = function(text, clear) {
 };
 
 simply.on = function(singleClick, handeler) {
-  if (e.button === 'up') {
+  if (type === 'up') {
     simply.subtitle(++count1);
-  } else if (e.button === 'down') {
+  } else if (type === 'down') {
     simply.subtitle(++count2);
   }
 simply.on = function(longClick) {
-  if (e.button === 'select') {
+  if (type === 'select') {
     simply.subtitle(count1 = 0);
     simply.subtitle(count2 = 0);
-    } else if (e.button === 'up') {
+    } else if (type === 'up') {
     simply.subtitle(--count1);
-    } else if (e.button === 'down') {
+    } else if (type === 'down') {
     simply.subtitle(--count2);
     }
     
