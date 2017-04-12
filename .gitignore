@@ -8,7 +8,7 @@ simply.on('singleClick', function(e) {
   if (e.button === 'up') {
     simply.subtitle(++count1);
   } else if (e.button === 'down') {
-    simply.subtitle(count2 = count2 -1);
+    simply.subtitle(count2 = count2 + 1);
   }
 simply.on('longClick', function(e) {
   if (e.button === 'select') {
@@ -21,8 +21,8 @@ simply.on('longClick', function(e) {
     }
     
     
-  localStorage.setItem('count1', count1);
-  localStorage.setItem('count2', count2);
+  //localStorage.setItem('count1', count1);
+  //localStorage.setItem('count2', count2);
 });
 });
 
