@@ -27,14 +27,14 @@ simply.on('longClick', function(e) {
     }
     
     
-  * @localStorage.setItem('count1', count1);
-  * @localStorage.setItem('count2', count2);
+    localStorage.setItem('count1', count1);
+    localStorage.setItem('count2', count2);
 });
 });
 
 
 
-* @simply.text({ title: 'count1', subtitle: count1 });
-* @simply.text({ title: 'count2', subtitle: count2});
+simply.text({ title: 'count1', subtitle: count1 });
+simply.text({ title: 'count2', subtitle: count2});
 
 
